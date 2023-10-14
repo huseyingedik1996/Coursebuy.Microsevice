@@ -13,9 +13,9 @@ namespace FreeCourse.Services.Order.Application.Mapping
     {
         public CustomMapping()
         {
-            CreateMap<Order.Domain.OrderAggregate.Order, OrderDto>();
-            CreateMap<OrderItem, OrderItemDto>();
-            CreateMap<Adress, AddressDto>();
+            CreateMap<Order.Domain.OrderAggregate.Order, OrderDto>().ReverseMap();
+            CreateMap<OrderItem, OrderItemDto>().ReverseMap();
+            CreateMap<Adress, AddressDto>().ReverseMap();
         }
     }
 }
